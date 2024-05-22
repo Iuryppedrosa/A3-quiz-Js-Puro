@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualizar Resposta Correta</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Atribuir Resposta Correta</h1>
+      <input
+        type="text"
+        id="perguntaIdInput"
+        placeholder="Digite o ID da pergunta"
+      />
+      <input
+        type="text"
+        id="respostaIdInput"
+        placeholder="Digite o ID da resposta correta"
+      />
+      <button onclick="atualizarRespostaCorreta()">Atualizar</button>
+    </div>
+
+    <div id="mensagem" style="display: none; color: green">
+      Resposta correta atualizada com sucesso!
+    </div>
+
+    <script src="/JS/AtribuirCorreta.js"></script>
+  </body>
+</html>
