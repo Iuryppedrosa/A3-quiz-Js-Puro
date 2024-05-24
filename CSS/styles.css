@@ -3,47 +3,59 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+body {
+  background: #d0d0d0;
+}
 
 .container {
-  max-width: 400px;
+  height: auto;
+  width: 600px;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 10px;
-  background: lightgray;
+  background: #007bff;
 }
 
 .container h1 {
   width: 100%;
-  font-size: 2.5rem;
+  height: 30%;
+  font-size: 3rem;
   margin: 0;
+  padding-top: 20px;
   display: inline-block;
-  background: rgb(149, 136, 136);
+  background: white;
   border-radius: 10px 10px 0 0;
+  color: black;
 }
 
 ul {
+  font-size: 1.5rem;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 li {
-  padding: 10px 0;
+  height: 130px;
   margin: 0;
   display: block;
 }
 
-li a {
-  padding: 10px 60px;
+a {
+  box-sizing: border-box;
+  padding-top: 40px;
+  display: block;
+  height: 100%;
   text-decoration: none;
-  color: black;
+  color: #f4f4f4;
 }
 
 li:hover {
-  background-color: rgb(149, 136, 136);
+  background-color: #0056b3;
 }
 
 input {
+  color: white;
   outline: none;
   border: none;
   text-align: center;
@@ -51,50 +63,55 @@ input {
   padding: 10px;
   margin: 0;
   box-sizing: border-box;
-  background: lightgray;
+  background: #007bff;
 }
 
 button {
   width: 100%;
   padding: 10px 0;
   margin: 0;
-  background: lightgray;
+  background: #007bff;
   border: none;
   border-radius: 0 0 10px 10px;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background: rgb(164, 164, 164);
+  background: #0056b3;
 }
 
 .lista_perguntas {
+  height: auto;
   text-align: center;
   margin: auto;
   border-radius: 10px;
-  background: lightgray;
+  background: #007bff;
 }
 
 #listaPerguntas ul {
+  height: auto;
   font-size: larger;
   font-weight: bold;
   text-align: left;
 }
 
 #listaPerguntas li {
+  height: auto;
   text-align: left;
   padding: 0;
   margin: 10px;
 }
 
 #listaRespostas li {
+  height: auto;
   text-align: left;
   padding: 0;
   margin: 10px;
 }
 
 #listaRespostas ul {
+  height: auto;
   font-size: larger;
   font-weight: bold;
   text-align: left;

@@ -1,8 +1,15 @@
+JavaScript;
+
 function enviarResposta() {
   const resposta = document.getElementById("respostaInput").value;
   const perguntaId = document.getElementById("perguntaIdInput").value;
 
-  const data = { textoDaResposta: resposta };
+  const data = {
+    textoDaResposta: resposta,
+    pergunta: {
+      id: perguntaId,
+    },
+  };
 
   const options = {
     method: "POST",
@@ -12,7 +19,7 @@ function enviarResposta() {
     body: JSON.stringify(data),
   };
 
-  fetch(`http://localhost:8080/perguntas/${perguntaId}/respostas`, options)
+  fetch("http://localhost:8080/respostas", options)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Erro ao enviar resposta");
